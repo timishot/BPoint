@@ -1,0 +1,139 @@
+.NewsLetter{
+    background: rgb(217,217,217);
+    background: linear-gradient(90deg, rgba(217,217,217,1) 0%, rgba(210,228,233,1) 28%, rgba(208,231,237,1) 73%, rgba(207,232,239,1) 100%);
+}
+
+.NewsLetter_flex{
+    margin: 0 30px 0 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 485px;
+    gap: 50px;
+}
+
+.NewLetter_heading{
+    margin-left: 100px;
+}
+
+.NewLetter_heading h1{
+    font-size: 2.2rem;
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+.NewLetter_title h1{
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.NewLetter_email{
+    margin-right: 100px;
+}
+
+.NewLetter_title p{
+    margin-bottom: 40px;
+    
+}
+
+.NewLetter_form form{
+    position: relative;
+}
+
+.NewLetter_form form input{
+    background: transparent;
+    border: none;
+    color: var(--seeAll-color);
+    border-bottom: 1px solid var(--seeAll-color);
+    padding-right: 300px;
+}
+
+.NewLetter_form form button{
+    position: absolute;
+    left: 510px;
+    border: none;
+    background: transparent;
+}
+
+.NewLetter_form form button span{
+    color: var(--primary-color);
+}
+
+.NewLetter_form form button i{
+    color: var(--primary-color);
+}
+
+@media screen and (max-width: 1081px){
+    .NewsLetter_flex{
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .NewLetter_email{
+        margin-right: 0;
+    }
+
+    .NewLetter_heading{
+        margin: 0;
+
+        text-align: center;
+    }
+
+    .NewLetter_title{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    /* .NewLetter_form form input{
+        width: 100%;
+    } */
+
+    .NewLetter_heading h1{
+        margin-bottom: 10px;
+    }
+
+
+}
+
+@media screen and (max-width: 593px){
+    .NewLetter_form form input{
+        padding-right: 200px;
+    }
+
+    .NewLetter_form form button{
+
+        left: 410px;
+    }
+}
+
+@media screen and (max-width: 517px){
+    .NewLetter_heading h1{
+        font-size: 1.7rem;
+    }
+
+    .NewLetter_title h1{
+        font-size: 1.3rem;
+    }
+
+    .NewLetter_title p{
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+    .NewLetter_form form input{
+        padding-right: 100px;
+    }
+
+    .NewLetter_form form button{
+
+        left: 310px;
+    }
+
+    .NewLetter_heading{
+        margin-left: 0;
+    }
+    
+}
+

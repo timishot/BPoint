@@ -1,0 +1,183 @@
+.link_section{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
+}
+
+.cancel1{
+    display: none;
+}
+
+.link_section ul{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: var(--margin-top);
+}
+
+.link_section ul li{
+    list-style: none;
+    border-right: 1px solid var(--seeAll-color);
+    padding-right: 40px;
+    margin-left: 40px;
+}
+
+.link_section ul li:nth-child(9){
+    border-right: none;
+}
+
+.close{
+    display: none;
+}
+/* .link_section ul li:nth-child(1) a div i{
+    display: none;
+} */
+
+.link_section ul li a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
+}
+
+.link_section ul li a i{
+    display: none;
+}
+
+.Account_label{
+    display: none;
+    padding: 0;
+}
+
+.Account_label .dropdown{
+    width: 350px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: black;
+}
+
+.move{
+    padding-left: 50px;
+}
+
+
+.accountManage1 ul li a{
+    padding-left: 50px;
+}
+
+.account_dropMenu{
+    width: 100%;
+}
+
+.accountName{
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+}
+
+
+@media screen and (max-width: 1247px){
+    .account_dropMenu > div{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+    }
+    
+    .link_section {
+        margin: 0;
+        position: fixed;
+        top: 0;
+        left: -350px;
+        width: 350px;
+        height: 100%;
+        backdrop-filter: blur(5px);
+        transition: left 0.3s ease-in-out;
+        z-index: 999;
+        padding-top: 60px; /* Push content down to avoid the close button */
+      }
+
+    .link_section ul{
+        flex-direction: column;
+
+        align-self: flex-start;
+        
+    }
+
+    .link_section > ul .love{
+        background-color: var(--primary-color);
+    }
+
+    .link_section ul li a{
+        border: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 50px;
+        
+    }
+
+    .Account_label{
+        display: block;
+        width: 100%;
+    }
+
+    .link_section > ul li:nth-child(1) a  div i{
+        margin-right: 10px;
+        font-size: 1rem;
+        color: white;
+    }
+
+    .link_section ul li a{
+        font-size: 1rem;
+    }
+
+    .link_section ul li {
+        border: none;
+        margin: 0;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    .link_section u~l li:nth-child(1) a div i{
+        margin-left: 50px;
+    }
+
+    .link_section ul li:nth-child(1) a div span{
+        color: white;
+    }
+
+
+    .link_section  ul li a > span{
+        margin-left: 50px;
+    }
+
+    .cancel1{
+        display: block;
+        position: absolute;
+        right: 50px;
+        cursor: pointer;
+    }
+
+    .link_section.open {
+        left: 0px;
+      }
+
+    .cancel1 i{
+        font-size: 2rem;
+    }
+
+    .link_section ul li a i{
+        display: block;
+    }
+
+    .link_section ul li:hover{
+        background-color: var(--secondary-color);
+        color: #fff;
+    }
+
+    .link_section ul li:hover a{
+        color: #fff;
+    }
+    
+}
+

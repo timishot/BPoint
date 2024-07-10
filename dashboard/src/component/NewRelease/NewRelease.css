@@ -1,0 +1,281 @@
+.NewRelease_header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.NewRelease_header h6{
+    color: var(--seeAll-color);
+    font-weight: 500;
+    font-size: 0.7rem;
+    margin-bottom: 10px;
+}
+
+.NewRelease_header h2{
+    display: inline-block;
+    position: relative;
+    font-size: 24px;
+    color: #ff8c5a; 
+    margin-bottom: 30px;
+}
+
+.NewRelease_header h2::before,
+.NewRelease_header h2::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 450px; /* Adjust the width as needed */
+    height: 2px; /* Line height */
+    background-color: #ff8c5a; /* Adjust the color as needed */
+}
+
+.NewRelease_header h2::before {
+    left: -490px; /* Adjust the distance as needed */
+}
+.NewRelease_header h2::after {
+    right: -490px; /* Adjust the distance as needed */
+}
+
+
+.swiper-pagination-bullet-active {
+    background-color: #ffffff !important;
+    border: 2px solid #1d8ba0 !important;
+    /* padding: 1px !important; */
+    border-radius: 1px !important;
+    /* padding-left: 5px !important; */
+    width: 30px !important;
+    height: 1px !important;
+    /* padding-right: 5px !important; */
+  }
+  .swiper-pagination-bullet {
+    background-color: #ffffff !important;
+    border: 2px solid #1d8ba0 !important;
+    /* padding: 1px !important; */
+    border-radius: 1px !important;
+    /* padding-left: 5px !important; */
+    width: 30px !important;
+    height: 1px !important;
+    /* padding-right: 5px !important; */
+  }
+
+
+  .button-prev-slide{
+    position: absolute;
+    top: 230px;
+    left: -50px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px; /* Adjust the width and height as needed */
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid var(--secondary-color); /* Border color and thickness */
+    font-size: 24px; /* Adjust the icon size as needed */
+    color: var(--secondary-color); /* Icon color */
+    background-color: transparent; /* Background color */
+    transition-duration: 500ms; /* Equivalent to 'duration-500' */
+    transition-property: left;
+    cursor: pointer;
+}
+
+.NewRelease_swiper:hover .button-prev-slide{
+    left: 20px;
+}
+
+
+.button-next-slide{
+    position: absolute;
+    top: 230px;
+    right: -50px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px; /* Adjust the width and height as needed */
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid var(--secondary-color); /* Border color and thickness */
+    font-size: 24px; /* Adjust the icon size as needed */
+    color: var(--secondary-color); /* Icon color */
+    background-color: transparent; /* Background color */
+    z-index: 999;
+    transition-duration: 500ms; /* Equivalent to 'duration-500' */
+    transition-property: right;
+    cursor: pointer;
+}
+
+.NewRelease_swiper:hover .button-next-slide{
+    right: 20px;
+}
+
+.Container1{
+    margin: var(--margin-border);
+    margin-bottom: 100px;
+}
+
+
+.Card_img1{
+    width: 328px;
+    height: 450px;
+}
+
+
+.Card_img1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.herosplit{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.Intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Intro h1{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.Intro p{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.Intro span{
+    font-weight: bold;
+    font-size: 1rem;
+    color: #CB4154;
+}
+
+.button-prev-slide{
+    z-index: 99;
+}
+
+.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-vertical{
+    margin-top: 200px;
+}
+
+.view{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.view h3, .view i{
+    color: var(--primary-color);
+}
+
+.view .ViewAll {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.view .ViewAll h3{ 
+    margin-right: 5px;
+    padding: 1rem;
+    font-weight: 500;
+}
+
+.ViewAll i{
+    position: absolute;
+    color: var(--primary-color);
+    left: 190px;
+    transition-duration: 500ms; /* Equivalent to 'duration-500' */
+    transition-property: left;
+}
+
+.view:hover i{
+    left: 210px;
+}
+
+
+@media screen and (max-width: 1233px){
+    .NewRelease_header h2::before,
+    .NewRelease_header h2::after {
+        width: 350px;
+    }
+
+    .NewRelease_header h2::before {
+        left: -400px; /* Adjust the distance as needed */
+    }
+    .NewRelease_header h2::after {
+        right: -400px; /* Adjust the distance as needed */
+    }
+}
+
+@media screen and (max-width: 1083px) {
+    .NewRelease_header h2::before,
+    .NewRelease_header h2::after {
+        width: 250px;
+    }
+
+    .NewRelease_header h2::before {
+        left: -300px; /* Adjust the distance as needed */
+    }
+    .NewRelease_header h2::after {
+        right: -300px; /* Adjust the distance as needed */
+    }
+}
+
+@media screen and (max-width: 879px){
+    .NewRelease_header h2::before,
+    .NewRelease_header h2::after {
+        width: 150px;
+    }
+
+    .NewRelease_header h2::before {
+        left: -200px; /* Adjust the distance as needed */
+    }
+    .NewRelease_header h2::after {
+        right: -200px; /* Adjust the distance as needed */
+    }
+}
+
+@media screen and (max-width: 879px){
+    .NewRelease_header h2::before {
+        left: -170px; /* Adjust the distance as needed */
+    }
+    .NewRelease_header h2::after {
+        right: -170px; /* Adjust the distance as needed */
+    }
+
+    .Container1{
+        margin: 100px 30px 0 30px;
+    }
+}
+
+@media screen and (max-width: 591px){
+    .NewRelease_header h2::before,
+    .NewRelease_header h2::after {
+        width: 100px;
+    }
+
+    .NewRelease_header h2::before {
+        left: -110px; /* Adjust the distance as needed */
+    }
+    .NewRelease_header h2::after {
+        right: -110px; /* Adjust the distance as needed */
+    }
+}
+
+
+@media screen and (max-width: 505px){
+    .NewRelease_header h2{
+        font-size: 1rem;
+    }
+}

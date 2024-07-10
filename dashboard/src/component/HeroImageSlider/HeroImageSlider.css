@@ -1,0 +1,173 @@
+.Hero {
+    width: 100%;
+    height: 81.8vh;
+    background: linear-gradient(to bottom right, transparent 60%, #FF975C 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.heroSplit{
+    display: flex;
+    margin: var(--margin-border);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero_text h1{
+    font-size: 2.1rem;
+    color: var(--primary-color);
+}
+
+.hero_text p{
+    font-size: 1.5rem;
+    font-weight: 400;
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.hero_text button{
+    border-radius: var(--border-radius);
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 1.5rem;
+    padding: 20px 50px 20px 50px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.hero_text button:hover{
+    background-color: #ffffff;
+    color: var(--primary-color);
+    border: 1px solid  var(--primary-color);
+}
+
+.Hero_image img {
+    width: 378px;
+}
+
+.button-prev-slide{
+    position: absolute;
+    top: 230px;
+    left: -50px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px; /* Adjust the width and height as needed */
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid var(--secondary-color); /* Border color and thickness */
+    font-size: 24px; /* Adjust the icon size as needed */
+    color: var(--secondary-color); /* Icon color */
+    background-color: transparent; /* Background color */
+    transition-duration: 500ms; /* Equivalent to 'duration-500' */
+    transition-property: left;
+}
+
+.Hero:hover .button-prev-slide{
+    left: 20px;
+}
+
+
+.button-next-slide{
+    position: absolute;
+    top: 230px;
+    right: -50px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px; /* Adjust the width and height as needed */
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid var(--secondary-color); /* Border color and thickness */
+    font-size: 24px; /* Adjust the icon size as needed */
+    color: var(--secondary-color); /* Icon color */
+    background-color: transparent; /* Background color */
+    z-index: 999;
+    transition-duration: 500ms; /* Equivalent to 'duration-500' */
+    transition-property: right;
+}
+
+.Hero:hover .button-next-slide{
+    right: 20px;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #ffffff !important;
+    border: 2px solid #1d8ba0 !important;
+    /* padding: 1px !important; */
+    border-radius: 1px !important;
+    /* padding-left: 5px !important; */
+    width: 30px !important;
+    height: 1px !important;
+    /* padding-right: 5px !important; */
+  }
+  .swiper-pagination-bullet {
+    background-color: #ffffff !important;
+    border: 2px solid #1d8ba0 !important;
+    /* padding: 1px !important; */
+    border-radius: 1px !important;
+    /* padding-left: 5px !important; */
+    width: 30px !important;
+    height: 1px !important;
+    /* padding-right: 5px !important; */
+  }
+
+@media screen and (max-width: 963px){
+    .hero_text h1{
+        font-size: 1.8rem;
+    }
+    .hero_text p{
+        font-size: 1.2rem;
+    }
+
+    .Hero_image img{
+        width: 250px;
+    }
+    
+    .hero_text button{
+        padding: 15px 30px 15px 30px;
+        font-size: 1rem;
+    }
+
+
+}
+
+@media screen and (max-width: 775px){
+    .hero_text h1{
+        font-size: 1.5rem;
+    }
+    .hero_text p{
+        font-size: .8rem;
+    }
+    .Hero_image img{
+        width: 200px;
+    }
+    .heroSplit{
+        margin: 0 30px 0 30px;
+        height: 80vh;
+    }
+
+    .hero_text p{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 415px){
+    .hero_text h1{
+        font-size: 1.2rem;
+    }
+
+    .hero_text p{
+        font-size: .7rem;
+    }
+
+    .Hero_image img{
+        width: 189px;
+    }
+
+}

@@ -1,0 +1,209 @@
+.FeaturedBook{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 80vh; */
+    background: rgb(217,217,217);
+    background: linear-gradient(90deg, rgba(217,217,217,1) 0%, rgba(210,228,233,1) 28%, rgba(208,231,237,1) 73%, rgba(207,232,239,1) 100%);
+    margin-bottom: 100px;
+}
+
+.FeaturedFlex{
+    width: 100%;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: var(--margin-border);
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+
+.FeaturedImg{
+    align-self: flex-start;
+}
+
+.FeaturedImg img {
+    width: 413px;
+}
+
+
+
+.FeaturedText .line{
+    border-top: 2px solid var(--primary-color);
+    width: 100px;
+    margin-bottom: 30px;
+    margin-top: 9px;
+}
+
+.FeaturedText h1{
+    font-size: 4rem;
+    color: var(--secondary-color);
+}
+
+.FeaturedText > p{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--seeAll-color);
+    margin-bottom: 20px;
+}
+
+.FeaturedHeader h3{
+    font-size: 1.8rem;
+    color: var(--secondary-color);
+}
+
+.FeaturedHeader p{
+    font-weight: 400;
+    color: var(--seeAll-color);
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+}
+
+.Price{
+    margin-bottom: 30px;
+}
+
+.Price span{
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-decoration: underline;
+    color: #CB4154;
+}
+.ViewMore1{
+    width: 150px;
+}
+
+.ViewMore1 > div{
+    border: 1px solid var(--primary-color);
+}
+
+.ViewMore1 > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    height: 50px;
+}
+
+.LearnMore1{
+    display: flex;
+    position: relative;
+}
+
+.LearnMoreButton1{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--secondary-color);
+    padding: 20px 70px 20px 70px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.LearnMoreButton1:hover{
+    background-color: var(--secondary-color);
+}
+
+.LearnMoreButton1:hover h5,
+.LearnMoreButton1:hover i {
+    color: #fff;
+}
+
+
+.LearnMoreButton1 h5{
+    font-weight: 300;
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    margin-right: 10px;
+}
+
+.LearnMoreButton1 i{
+    position: absolute;
+    color: var(--secondary-color);
+    left: 210px;
+    transition-duration: 500ms; /* Equivalent to 'duration-500' */
+    transition-property: left;
+}
+
+.LearnMoreButton1:hover i {
+    left: 240px;
+}
+
+@media screen and (max-width: 1212px){
+    .FeaturedImg img{
+        width: 300px;
+    }
+
+    .FeaturedText h1{
+        font-size: 2.5rem;
+    }
+
+    .FeaturedText > p{
+        font-size: 1rem;
+    }
+
+    .FeaturedHeader h3{
+        font-size: 1.5rem;
+    }
+
+    .FeaturedHeader p{
+        font-size: 1.3rem;
+    }
+
+    .Price span{
+        font-size: 1.3rem;
+    }
+
+    .LearnMoreButton1{
+        padding: 15px 50px 15px 50px;
+    }
+
+    .LearnMoreButton1 h5{
+        font-size: 1.3rem;
+    }
+
+    .LearnMoreButton1 i{
+        position: absolute;
+        color: var(--secondary-color);
+        left: 170px;
+        transition-duration: 500ms; /* Equivalent to 'duration-500' */
+        transition-property: left;
+    }
+    
+    .LearnMoreButton1:hover i {
+        left: 200px;
+    }
+}
+
+@media screen and (max-width: 811px){
+    .FeaturedFlex{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .FeaturedHeader p{
+        font-size: 0.9rem;
+    }
+
+    .FeaturedText{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .line{
+        display: none;
+    }
+}
+
+@media screen and(max-width: 659px){
+    .FeaturedHeader p{
+        font-size: 0.5rem;
+    }
+}

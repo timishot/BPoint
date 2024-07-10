@@ -1,0 +1,135 @@
+.Ebook{
+    background: linear-gradient(90deg, rgba(217,217,217,1) 0%, rgba(210,228,233,1) 28%, rgba(208,231,237,1) 73%, rgba(207,232,239,1) 100%);
+    margin-bottom: 100px;
+}
+
+.EbookLogin{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+}
+
+.eHead{
+    display: flex;
+    align-items: center;
+}
+
+.eHead .line{
+    border-top: 1px solid var(--primary-color);
+    width: 20px;
+    margin-right: 10px;
+}
+
+.eHead h3{
+    font-weight: bold;
+    color: var(--primary-color);
+    font-size: 1.5rem;
+}
+
+
+
+.Eheader_2 h2{
+    font-size: 2.1rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.Eheader_2 p{
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+
+.Ebook_form form input[type="text"]{
+    padding: 20px 350px 20px 20px;
+    border: 1px solid #0000;
+    border-right: none;
+    border-radius: 0;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+
+.EbookFlex{
+    margin: var(--margin-border);
+    display: flex;
+    gap: 50px;
+    
+}
+
+.EbookFlex > div{
+    flex: 1;
+}
+
+.Ebook_form form{
+    position: relative;
+    display: flex;
+
+    
+}
+
+.Ebook_form form button{
+    padding: 20px;
+    border: 1px solid #0000;
+    border-left: none;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    color: white;
+    background-color: var(--primary-color);
+    font-weight: bold;
+
+}
+
+.Eimg{
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1089px){
+    .Eimg {
+        display: none;
+    }
+}
+
+.Ebook_form form input[type="text"]{
+    padding: 20px 150px 20px 20px;
+    border: 1px solid #0000;
+    border-right: none;
+    border-radius: 0;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+@media screen and (max-width: 735px){
+    .Ebook_form form input[type="text"]{
+        padding-right: 30px;
+    }
+
+    .Eheader_2 h2{
+        font-size: 1.5rem;
+    }
+
+    .eHead h3{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 617px) {
+    .Eheader_2 p{
+        font-size: 1rem;
+    }
+
+    .Ebook_form form input[type="text"]{
+        padding-right: 10px;
+    }
+
+    .Ebook_form form button{
+        padding: 10px;
+    }
+
+    .EbookFlex{
+        margin: 0 30px 0 30px;
+    }
+}

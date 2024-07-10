@@ -1,0 +1,109 @@
+footer{
+    margin-top: 150px;
+}
+
+.FooterFlex{
+    display: flex;
+    gap: 50PX;
+    margin: var(--margin-border);
+    margin-bottom: 70px;
+}
+
+.newFlex div img{
+    width: 200px;
+    border-radius: 10px;
+}
+
+.logo1 img{
+    width: 100px;
+}
+
+.newFlex > div{
+    display: flex;
+    gap: 20px;
+}
+
+.newFlex {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.BPoint_info p{
+
+    font-weight: 400;
+    font-size: 1rem;
+    margin-bottom: 50px;
+}
+
+.BPoint_link{
+    display: flex;
+    gap: 30px;
+}
+
+.BPoint_link i{
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.company h1{
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.F2 > ul li{
+    list-style: none;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.Latest h1{
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.newFlex div h1{
+    font-size: 1rem;
+}
+
+
+.Copyright{
+    margin: var(--margin-border);
+    margin-bottom: 40px;
+}
+
+.CopyrightFLex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.CopyrightFLex h5{
+    font-size: 1rem;
+}
+
+.CopyrightFLex h5 span{
+    color: var(--primary-color);
+}
+
+@media screen and (max-width: 1171px){
+    .FooterFlex{
+        flex-direction: column;
+        margin: 0 30px 0 30px;
+    }
+
+    .F2 > ul li{
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 665px){
+    .newFlex > div{
+        flex-direction: column;
+    }
+
+    .Copyright{
+        margin: 50px 30px 0 30px;
+    }
+}

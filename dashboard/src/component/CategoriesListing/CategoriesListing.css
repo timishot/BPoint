@@ -1,0 +1,87 @@
+.CategoriesSection{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.CategoriesBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: start;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 506px;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+}
+
+.CategoriesBox .lo{
+    background-color: #CB4154;
+    width: 100%;
+    padding: 30px 0 30px;
+    margin: 0;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.CategoriesBox > div h1{
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+.CategoriesContainerFlex {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin: var(--margin-border);
+}
+
+
+.random {
+    /* border: none;
+    box-shadow: none; */
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin-bottom: 30px;
+    text-align: center;
+    backdrop-filter: blur(5px);
+}
+
+
+.random > div h1{
+    color: #CB4154;
+    margin-bottom: 10px;
+    font-size: 2.1rem;
+    text-align: center;
+}
+
+.random div button{
+    color: var(--primary-color);
+    background: transparent;
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    padding: 10px 15px 10px 15px;
+    font-size: 1.5rem;
+    transition: all 0.3s;
+}
+
+.random  div button:hover{
+    background-color: var(--primary-color);
+    color: #fff;
+}

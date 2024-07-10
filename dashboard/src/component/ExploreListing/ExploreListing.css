@@ -1,0 +1,138 @@
+.Explore{
+    margin: var(--margin-border);
+    margin-top: 100px;
+    
+}
+
+.categ div{
+    border-top: 1px solid var(--secondary-color);
+    width: 20px;
+    margin-right: 20px;
+}
+
+.categ{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.categ h3{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+
+}
+
+.Expl h2{
+    color: var(--primary-color);
+    font-size: 2.1rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.Explore_card{
+    display: flex;
+    justify-content:center;
+    gap: 50px;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+
+.ExploreImageCard img{
+    width: 349px;
+    height: 349px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card p{
+    width: 349px;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+.card h4{
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+.LearnMore{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.LearnMoreButton{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--primary-color);
+    padding: 20px 70px 20px 70px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.LearnMoreButton:hover{
+    background-color: var(--primary-color);
+}
+
+.LearnMoreButton:hover h5,
+.LearnMoreButton:hover i {
+    color: #fff;
+}
+
+
+.LearnMoreButton h5{
+    font-weight: 300;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-right: 10px;
+}
+
+.LearnMoreButton i{
+    position: absolute;
+    color: var(--primary-color);
+    left: 210px;
+    transition-duration: 500ms; /* Equivalent to 'duration-500' */
+    transition-property: left;
+}
+
+.LearnMoreButton:hover i {
+    left: 240px;
+}
+
+@media screen and (max-width: 667px){
+    .Expl h2{
+        font-size: 1.8rem;
+    }
+
+    .categ h3{
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 543px){
+    .Explore{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+}
+
+@media screen and (max-width: 379px){
+    .Expl h2{
+        font-size: 1.5rem;
+    }
+
+    .categ h3{
+        font-size: 1.2rem;
+    }
+}

@@ -1,0 +1,177 @@
+.createAccount1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+}
+
+.signUpCategories{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 20px 50px 20px 50px;
+    border-radius: 10px;
+    width: 450px;
+}
+
+.form-box1{
+    width: 100%;
+}
+
+
+.logo2 {
+    font-size: 40px;
+}
+
+.logo2 img{
+    width: 90px;
+}
+
+.form-box1 > h2 {
+    color: var(--primary-color);
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+.input-group1{
+    margin-bottom: 15px;
+}
+
+.input-group1 label{
+    display: block; /* Ensure the label behaves as a block element */
+    margin-bottom: 5px; /* Adjust this value as needed */
+}
+
+.form-box1 > p {
+    color: #808080;
+    margin-bottom: 10px;
+}
+
+.creategroup_form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-group1 {
+    position: relative;
+}
+
+.move3{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+}
+.cancel2{
+    display: none;
+}
+.pop1{
+    display: flex;
+}
+
+
+
+.input-group1 > input[type="text"], .input-group1 > input[type="email"], .input-group1 > input[type="password"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.password-container {
+    position: relative;
+}
+
+.input-group1 > i {
+    position: absolute;
+    right: 10px;
+    top: 42px;
+    cursor: pointer;
+}
+
+.terms {
+    display: flex;
+    align-items: center;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.terms p{
+    font-size: 0.9rem;
+}
+
+.terms > input{
+    margin-right: 5px;
+}
+
+button.btn-primary1 {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    font-weight: bold;
+}
+
+.separator {
+    text-align: center;
+    margin: 20px 0;
+    position: relative;
+    font-size: 0.9em;
+    color: #888;
+}
+
+.separator::before,
+.separator::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 100px;
+    height: 1px;
+    background-color: #ddd;
+}
+
+.separator::before {
+    left: -5px;
+}
+
+.separator::after {
+    right: -5px;
+}
+
+button.btn-google1 {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+
+button.btn-google1 img {
+    width: 20px;
+}
+
+button:hover {
+    opacity: 0.9;
+}
