@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from '../asset/B-Point.png';
 import './NavBar.css';
 import { AppContext } from '../../Context/SignInProvider';
+import { Link } from 'react-router-dom';
 
 export class NavBar extends Component {
   constructor(props) {
@@ -66,10 +67,10 @@ export class NavBar extends Component {
                       </div>
                     </div>
                     <div className='icon cart'>
-                      <a href='#'>
+                      <Link to='/cart'>
                         <i className="fa-solid fa-cart-shopping"></i>
                         <p>Cart</p>
-                      </a>
+                      </Link>
                     </div>
                     <div className='icon wishlist'>
                       <a href='#'>
