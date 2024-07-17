@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import logo from '../asset/B-Point.png';
+import { connect } from 'react-redux';
 import './NavBar.css';
 import { AppContext } from '../../Context/SignInProvider';
 import { Link } from 'react-router-dom';
+import { removeFromCart } from '../../actions/cartActions';
 
 export class NavBar extends Component {
   constructor(props) {
@@ -21,9 +23,10 @@ export class NavBar extends Component {
   };
 
   render() {
-    const { toggleMenu } = this.props;
+    const { toggleMenu, cartItems } = this.props;
     const { isHovered } = this.state;
     return (
+      
       <AppContext.Consumer>
         {({ toggleSignIn, toggleCreateAccount}) => (
           <>
@@ -70,6 +73,7 @@ export class NavBar extends Component {
                       <Link to='/cart'>
                         <i className="fa-solid fa-cart-shopping"></i>
                         <p>Cart</p>
+                        {cartItems.length > 0 ? (<span className='cart_number'>{cartItems.length}</span>): (null)}
                       </Link>
                     </div>
                     <div className='icon wishlist'>
@@ -89,4 +93,15 @@ export class NavBar extends Component {
   }
 }
 
-export default NavBar;
+const mapStateToProps = (state) => ({
+  cartItems: state.cartReducer.get('cartItems').toJS(),
+});
+
+const mapDispatchToProps = {
+  removeFromCart,
+};
+
+const ConnectedNavBar = connect(mapStateToProps, mapDispatchToProps)(NavBar);
+
+// Export the connected component
+export default ConnectedNavBar;

@@ -5,12 +5,12 @@ export const addToCart = (book) => ({
     payload: book,
 })
 
-export const removeFromCarrt = (bookId) => ({
+export const removeFromCart = (book) => ({
     type: CartsType.REMOVE_FROM_CART,
-    payload: bookId,
+    payload: book,
 })
 
-export const updateCartQuantity = (bookId, quantity) => ({
+export const updateCartQuantity = (book, quantity) => ({
     type: CartsType.UPDATE_CART_QUANTITY,
-    payload:{ bookId, quantity }
+    payload:{ book, quantity }
 })

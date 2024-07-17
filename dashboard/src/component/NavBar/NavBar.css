@@ -22,6 +22,25 @@
     position: relative;
 }
 
+.cart{
+    position: relative;
+}
+
+.cart_number{
+    position: absolute;
+    top: -10px; /* Adjust the top position as needed */
+    right: -4px; /* Adjust the right position as needed */
+    width: 20px; /* Set width to desired size */
+    height: 20px; /* Set height to the same size to make it a circle */
+    border-radius: 50%; /* Make the span a circle */
+    background-color: var(--price-color);
+    color: white; /* Ensure the text is visible */
+    display: flex; /* Center the text */
+    align-items: center; /* Center the text vertically */
+    justify-content: center; /* Center the text horizontally */
+    font-size: 12px; /* Adjust font size as needed */
+}
+
 input[type="text"] {
     padding-right: 100px; /* Space for the search icon */
     padding: 22px 350px 22px 10px;
@@ -37,6 +56,10 @@ input[type="text"]:focus{
 
 header{ 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    z-index: 999;
 }
 
 nav{
@@ -177,6 +200,7 @@ nav{
 }
 
 .accountManage ul li a{
+    position: relative;
     width: 100%;
     display: flex;
     justify-content: center;

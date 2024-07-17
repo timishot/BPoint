@@ -1,10 +1,12 @@
 import React, { Component } from 'react'
 import NavBar from '../component/NavBar/NavBar'
 import Menu from '../component/Menu/Menu'
-import CartTable from '../component/CartTable/CartTable'
 import Footer from '../component/Footer/Footer'
+import AboutHeader from '../component/AboutHeader/AboutHeader'
+import AboutText from '../component/AboutText/AboutText'
 
-export default class Cart extends Component {
+
+export default class AboutUs extends Component {
     constructor(props){
         super(props)
         this.state ={
@@ -24,7 +26,8 @@ export default class Cart extends Component {
       <>
         <NavBar toggleMenu={this.toggleMenu}/>
         <Menu isOpen={this.state.isOpen} toggleMenu={this.toggleMenu}/>
-        <CartTable />
+        <AboutHeader />
+        <AboutText />
         <Footer />
       </>
     )

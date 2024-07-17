@@ -128,12 +128,34 @@
 }
 
 .herosplit{
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-bottom: 80px;
+    transition: background-color 0.3s ease-in-out;
 }
+
+.AddToCart button{
+    display: none;
+}
+
+.herosplit:hover .AddToCart button{
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 105px;
+    padding: 30px 180px 30px 180px;
+    background-color: var(--price-color);
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+}
+
 
 .Intro{
     display: flex;
@@ -202,6 +224,9 @@
 .view:hover i{
     left: 210px;
 }
+
+
+
 
 
 @media screen and (max-width: 1233px){

@@ -12,12 +12,15 @@ export default class CategoriesListing extends Component {
       return (
         <>
           <div className='CategoriesSection'>
-            <div className='CategoriesBox random'  style={{ backgroundImage: `url(${library})`}}>
-                <div>
-                <h1>Explore Our Top Categories</h1>
-                <button>View More</button>
-                </div>
+            <section class="book-categories">
+              <div class="background-container">
+                  <img src={library} alt="Book Categories" />
               </div>
+              <div class="overlay">
+                  <h1>Welcome to Our Book Categories</h1>
+                  <p>Let go On a <span>journey</span> to Acquire Knowledge</p>
+              </div>
+            </section>
           <div className='CategoriesContainerFlex'>
             <div className='CategoriesBox box1' style={{ backgroundImage: `url(${management})` }}>
               <div className='lo'><h1>Management Books</h1></div>

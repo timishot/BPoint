@@ -1,0 +1,48 @@
+.AboutTextContainer{
+    margin: var(--margin-border);
+    margin-top: 100px;
+}
+
+.AboutFlex {
+    display: flex;
+    gap: 20px;
+}
+
+.AboutImg {
+    flex: 1; /* Take up all available space equally */
+    width: 700px;
+    max-width: 50%; /* Adjust max-width as needed */ 
+    height: 500px;
+}
+
+.AboutImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.AboutText1 {
+    flex: 1; /* Take up all available space equally */
+}
+
+.AboutText1 > h1{
+    color: var(--primary-color);
+    font-size: 2rem;
+}
+
+
+@media screen and (max-width: 999px){
+    .AboutFlex{
+        flex-direction: column;
+    }
+
+    .AboutImg {
+        flex: 1; /* Take up all available space equally */
+        width: 100%;
+        max-width: 100%;
+        height: 300px;
+    }
+
+    
+}

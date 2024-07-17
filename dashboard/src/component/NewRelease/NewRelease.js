@@ -1,17 +1,27 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useContext } from 'react';
 import { connect } from 'react-redux';
 import { fetchBooks } from '../../actions/bookActions';
+import { addToCart } from '../../actions/cartActions';
 import './NewRelease.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import { ModalContext } from '../../Context/ModalProvider';
 
-const NewRelease = ({ books, fetchBooks }) => {
+
+
+const NewRelease = ({ books, fetchBooks, addToCart }) => {
+  const { showModal } = useContext(ModalContext);
   useEffect(() => {
     fetchBooks();
   }, [fetchBooks]);
+
+  const handleAddToCart = (book) => {
+    addToCart(book);
+    showModal(`${book.bookTitle} has been added to the cart.`);
+  };
 
   return (
     <div className='Container1'>
@@ -30,7 +40,7 @@ const NewRelease = ({ books, fetchBooks }) => {
           }}
           pagination={{ clickable: true }}
           autoplay={{
-            delay: 3000, // 3 seconds
+            delay: 5000, // 3 seconds
             disableOnInteraction: false,
           }}
           breakpoints={{
@@ -63,6 +73,9 @@ const NewRelease = ({ books, fetchBooks }) => {
                   <p>{book.bookAuthor}</p>
                   <span>₦{book.price}</span>
                 </div>
+                <div className='AddToCart'>
+                  <button onClick={() => handleAddToCart(book)}>Add to cart</button>
+                </div>
               </div>
             </SwiperSlide>
           ))}
@@ -85,15 +98,13 @@ const NewRelease = ({ books, fetchBooks }) => {
   );
 };
 
-const mapStateToProps = (state) => {
-  console.log(state); // Add this line to inspect the state structure
-  return {
-    books: state.bookReducer.get('books').toJS(),
-  };
-};
+const mapStateToProps = (state) => ({
+  books: state.bookReducer.get('books').toJS(),
+});
 
 const mapDispatchToProps = {
   fetchBooks,
+  addToCart,
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(NewRelease);

@@ -1,6 +1,60 @@
-.CategoriesSection{
-    margin-top: 100px;
+.book-categories {
+    position: relative;
+    width: 100%;
+    height: 506px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
     margin-bottom: 100px;
+}
+
+.background-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.background-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(5px); /* Apply blur effect */
+    -webkit-filter: blur(5px); /* For Safari */
+}
+
+.book-categories .overlay {
+    position: relative;
+    z-index: 1; /* Ensure overlay content is above the blurred background */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.book-categories h1 {
+    color: #fff; /* Blue color */
+    font-size: 2.5rem;
+    margin: 0.5rem 0;
+}
+
+.book-categories p {
+    color: #fff; /* Blue color */
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+}
+
+.book-categories p span {
+    color: var(--price-color); /* Red color */
+    font-weight: bold;
 }
 
 .CategoriesBox{
