@@ -11,6 +11,7 @@ import SignIn from '../component/SignIn/SignIn'
 import CreateAccount from '../component/CreateAccount/CreateAccount';
 import Cart from '../Cart/Cart';
 import AboutUs from '../AboutUs/AboutUs';
+import Contact from '../Contact/Contact';
 
 export const App = () => {
 
@@ -29,12 +30,14 @@ export const App = () => {
               <Route path="/blog" element={<Blog />} />
               <Route path='/cart' element={<Cart />} />
               <Route path='/about-us' element={<AboutUs/>} />
+              <Route path='/about-us' element={<AboutUs/>} />
+              <Route  path='/contact-us' element={<Contact/>}/>
             </Routes>
           </div>
         </Router>
       </SignInProvider>
     </ModalProvider>
-  );
+  )
 };
 
 export default App;

@@ -40,7 +40,7 @@ export class NavBar extends Component {
                 </div>
                 <div className='Nav_categories'>
                   <form>
-                    <input type='text' id="search" name="Search" placeholder='Search by Author, Tit....' />
+                    <input className="navinput" type='text' id="search" name="Search" placeholder='Search by Author, Tit....' />
                     <button type="submit" className="search-button1">
                       <i className="fa-solid fa-magnifying-glass search_button search-icon"></i>
                     </button>
