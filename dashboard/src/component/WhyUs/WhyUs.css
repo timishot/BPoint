@@ -1,0 +1,84 @@
+.whyContainer{
+    margin: var(--margin-border);
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.why_text{
+    text-align: center;
+}
+
+.why_text h1{
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.why_text p{
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.WhyGrid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 50px;
+    justify-items: center; /* Centers the grid items horizontally */
+    align-items: center; /* Centers the grid items vertically */
+}
+
+.why{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 500px;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #F0F0F0;
+}
+
+.why_icon{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+
+/* Ensure each icon has a distinct color */
+.why:nth-child(1) .why_icon {
+    background-color: #00FF1A; /* Green */
+  }
+  
+  .why:nth-child(2) .why_icon {
+    background-color: #FFFF00; /* Yellow */
+  }
+  
+  .why:nth-child(3) .why_icon {
+    background-color: #0000FF; /* Blue */
+  }
+
+  .why_icon i{
+    font-size: 1.5rem;
+    color: #fff;
+  }
+
+.why h1{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 500px){
+    .WhyGrid{
+        grid-template-columns: 1fr;
+    }
+
+    .whyContainer{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+}
