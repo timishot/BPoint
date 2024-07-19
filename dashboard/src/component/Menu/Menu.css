@@ -31,9 +31,6 @@
 .close{
     display: none;
 }
-/* .link_section ul li:nth-child(1) a div i{
-    display: none;
-} */
 
 .link_section ul li a{
     text-decoration: none;
@@ -49,7 +46,6 @@
 
     display: none;
     padding: 0;
-    margin-top: 1000px;
 }
 
 .Account_label .dropdown{
