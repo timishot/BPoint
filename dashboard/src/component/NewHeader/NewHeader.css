@@ -1,0 +1,36 @@
+.New-us{
+    position: relative;
+    width: 100%;
+    height: 506px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+
+.New-us img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.New-us .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.New-us h1 {
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    margin: 0;
+}

@@ -12,6 +12,8 @@ import CreateAccount from '../component/CreateAccount/CreateAccount';
 import Cart from '../Cart/Cart';
 import AboutUs from '../AboutUs/AboutUs';
 import Contact from '../Contact/Contact';
+import NewRelease from '../NewRelease/NewRelease';
+import Ebook from '../Ebook/Ebook';
 
 export const App = () => {
 
@@ -32,6 +34,8 @@ export const App = () => {
               <Route path='/about-us' element={<AboutUs/>} />
               <Route path='/about-us' element={<AboutUs/>} />
               <Route  path='/contact-us' element={<Contact/>}/>
+              <Route  path='/new-releases' element={<NewRelease />}/>
+              <Route  path='/ebooks' element={<Ebook />}/>
             </Routes>
           </div>
         </Router>
